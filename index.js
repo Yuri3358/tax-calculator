@@ -12,8 +12,8 @@ function Test() {
         const total_value = Number(price_value) + Number(increase)
 
         setPrice(price_value.toLocaleString("pt-BR", {style: "currency", currency:"BRL"}))
-        setIncrease(Number(price_value*tax/100))
         setTotal(total_value.toLocaleString("pt-BR", {style: "currency", currency:"BRL"}))
+        setIncrease(Number(price_value*tax/100))
     })
 
     return (
