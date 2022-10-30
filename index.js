@@ -6,11 +6,10 @@ function Test() {
     const [tax, setTax] = React.useState(50)
     const [increase, setIncrease] = React.useState(0)
     const [total, setTotal] = React.useState(1)
+    const price_value = Number(value)
+    const total_value = Number(price_value) + Number(increase)
 
     React.useEffect(() => {
-        const price_value = Number(value)
-        const total_value = Number(price_value) + Number(increase)
-
         setPrice(price_value.toLocaleString("pt-BR", {style: "currency", currency:"BRL"}))
         setTotal(total_value.toLocaleString("pt-BR", {style: "currency", currency:"BRL"}))
         setIncrease(Number(price_value*tax/100))
