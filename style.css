@@ -1,0 +1,36 @@
+#content {
+    background-color: cornflowerblue;
+    width: 15cm;
+    margin: auto;
+    margin-bottom: 20%;
+    border: 5px;
+    border-color: black;
+    border-radius: 10px;
+    border-style: groove;
+    text-align: center;
+}
+
+body {
+    background-color: gray;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+label {
+    font-size: 30px;
+}
+
+.values {
+    font-size: 30px;
+    color: rgb(255, 255, 0);
+}
+
+#total {
+    color: #0bf32a
+}
