@@ -18,7 +18,7 @@ function Test() {
 
     return (
         <section id="content">  
-            <h1>Calculadora de gorjeta</h1>
+            <h1>Calculadora de taxa</h1>
             <label htmlFor="price">Preço</label>             
             <input 
                 type="range" 
