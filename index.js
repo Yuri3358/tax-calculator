@@ -13,7 +13,6 @@ function Calculator() {
                 return {total: Number(action.payload) + Number(price_value*tax/100)}
             case "decrease": 
                 return {total: Number(action.payload) - Number(price_value*tax/100)}
-                
             default:
                 return state
         }
@@ -48,8 +47,15 @@ function Calculator() {
             <h2>Taxa: <span className="values">{tax}%</span></h2>
             <h2>Total: <span className="values" id="total">{visual_total}</span></h2>
 
-            <button onClick={() => dispatch({type:"increase", payload:price_value})}>Acréscimo</button>
-            <button onClick={() => dispatch({type:"decrease", payload:price_value})}>Desconto</button>
+            <button
+                className="calc_settings" 
+                onClick={() => dispatch({type:"increase", payload:price_value})}>Acréscimo
+            </button>
+            
+            <button 
+                className="calc_settings" 
+                onClick={() => dispatch({type:"decrease", payload:price_value})}>Desconto
+            </button>
         </section>
     )
 }
