@@ -60,13 +60,4 @@ function Calculator() {
     )
 }
 
-
-function App() {
-    return (
-        <div>
-            <Calculator/>
-        </div>
-    )
-}
-
-root.render(<App/>)
+root.render(<Calculator/>)
