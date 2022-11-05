@@ -33,7 +33,7 @@ function Calculator() {
                 className="ranges" 
                 id="price"
                 onChange={(e) => setPriceValue(e.target.value)}
-                max="2000">
+                max="10000">
             </input> <br/>
 
             <label htmlFor="aliquote">Taxa</label>
